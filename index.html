@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP İNTERNET PROGRAMCILIĞI 2 - Soru ve Cevaplar</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f7f6; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #2c3e50; }
+        h2 { color: #2980b9; border-bottom: 2px solid #2980b9; padding-bottom: 5px; margin-top: 40px; }
+        .qa-block { margin-bottom: 30px; padding: 20px; background: #fdfdfd; border: 1px solid #e1e8ed; border-radius: 8px; }
+        .question { font-weight: bold; color: #c0392b; font-size: 1.1em; margin-bottom: 15px; }
+        .answer { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ccc; color: #27ae60; font-weight: bold; }
+        .answer-content { color: #333; font-weight: normal; margin-top: 10px; }
+        pre, code { background-color: #272822; color: #f8f8f2; padding: 10px; border-radius: 5px; font-family: 'Courier New', Courier, monospace; display: block; overflow-x: auto; }
+        .ans-code { background-color: #ecf0f1; color: #2c3e50; border-left: 4px solid #27ae60; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PHP - İNTERNET PROGRAMCILIĞI 2<br>Deneme Sınavı Soru ve Cevapları</h1>
+
+        <h2>1. Bölüm - Kodun Çıktısını Bulunuz</h2>
+        
+        <div class="qa-block">
+            <div class="question">1. Aşağıdaki kodun çıktısı nedir?
+<pre>&lt;?php
+for( $i=2; $i<=10; $i+=2){
+    echo $i."&lt;br&gt;";
+}
+?&gt;</pre>
+            </div>
+            <div class="answer">Cevap:
+                <div class="answer-content">2, 4, 6, 8, 10</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">2. Aşağıdaki kodun çıktısı nedir?
+<pre>&lt;?php
+$toplam=0;
+for($i=1; $i<=5; $i++){
+    $toplam += $i;
+}
+echo $toplam;
+?&gt;</pre>
+            </div>
+            <div class="answer">Cevap:
+                <div class="answer-content">15</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">3. Aşağıdaki kodun çıktısı nedir?
+<pre>&lt;?php
+$i=1;
+while($i<=5) {
+    echo $i*2. "&lt;br&gt;";
+    $i++;
+}
+?&gt;</pre>
+            </div>
+            <div class="answer">Cevap:
+                <div class="answer-content">2, 4, 6, 8, 10</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">4. Aşağıdaki kodun çıktısı nedir?
+<pre>&lt;?php
+$dizi=array(10,20,30,40);
+echo count($dizi);
+echo "&lt;br&gt;";
+echo max($dizi);
+echo "&lt;br&gt;";
+echo min($dizi);
+?&gt;</pre>
+            </div>
+            <div class="answer">Cevap:
+                <div class="answer-content">4<br>40<br>10</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">5. Aşağıdaki kodun çıktısı nedir?
+<pre>&lt;?php
+$dizi = array("Ali", "Ayşe", "Mehmet");
+foreach($dizi as $deger) {
+    echo $deger."&lt;br&gt;";
+}
+?&gt;</pre>
+            </div>
+            <div class="answer">Cevap:
+                <div class="answer-content">Ali<br>Ayşe<br>Mehmet</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">6. Aşağıdaki kodun çıktısı nedir?
+<pre>&lt;?php
+for ($i=1; $i<=5; $i++){
+    if($i==3){
+        break;
+    }
+    echo $i."&lt;br&gt;";
+}
+?&gt;</pre>
+            </div>
+            <div class="answer">Cevap:
+                <div class="answer-content">1, 2<br><em>(3'e gelince break döngüyü tamamen bitirir.)</em></div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">7. Aşağıdaki kodun çıktısı nedir?
+<pre>&lt;?php
+for ($i=1; $i<=5; $i++){
+    if($i==3){
+        continue;
+    }
+    echo $i."&lt;br&gt;";
+}
+?&gt;</pre>
+            </div>
+            <div class="answer">Cevap:
+                <div class="answer-content">1, 2, 4, 5<br><em>(continue, 3 sayısını atlar.)</em></div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">8. Aşağıdaki kodun çıktısı nedir?
+<pre>&lt;?php
+function topla($a,$b){
+    return $a+$b;
+}
+echo topla (10,15);
+?&gt;</pre>
+            </div>
+            <div class="answer">Cevap:
+                <div class="answer-content">25</div>
+            </div>
+        </div>
+
+        <h2>2. Bölüm - Kod Yazma Soruları</h2>
+
+        <div class="qa-block">
+            <div class="question">9. PHP'de for döngüsü kullanarak 1'den 50'ye kadar olan çift sayıları ekrana yazdıran kodu yazınız.</div>
+            <div class="answer">Cevap:
+                <div class="answer-content">
+<pre class="ans-code">&lt;?php
+for($i=1; $i<=50; $i++){
+    if($i%2==0) {
+        echo $i."&lt;br&gt;";
+    }
+}
+?&gt;</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">10. 1'den 100'e kadar olan çift sayıların toplamını hesaplayıp ekrana yazdıran PHP kodunu yazınız.</div>
+            <div class="answer">Cevap:
+                <div class="answer-content">
+<pre class="ans-code">&lt;?php
+$toplam=0;
+for($i=1; $i<=100; $i++){
+    if($i%2==0){
+        $toplam += $i;
+    }
+}
+echo $toplam;
+?&gt;</pre>
+                Çıktı: 2550
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">11. PHP'de bir dizi oluşturunuz. Dizi içerisinde 5, 10, 15, 20 sayıları bulunsun. Foreach döngüsü kullanarak bütün elemanları ekrana yazdırınız.</div>
+            <div class="answer">Cevap:
+                <div class="answer-content">
+<pre class="ans-code">&lt;?php
+$dizi = array(5,10,15,20);
+foreach($dizi as $deger) {
+    echo $deger."&lt;br&gt;";
+}
+?&gt;</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">12. İki sayı alan ve bu sayıların toplamını ekrana yazdıran topla() isimli bir fonksiyon yazınız.</div>
+            <div class="answer">Cevap:
+                <div class="answer-content">
+<pre class="ans-code">&lt;?php
+function topla($a,$b){
+    echo $a+$b;
+}
+topla(5,3);
+?&gt;</pre>
+                Örnek çıktı: 8
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">13. 1'den 10'a kadar sayıları yazdıran, ancak 5 sayısına geldiğinde döngüyü tamamen durduran PHP kodunu yazınız. (Break kullanınız.)</div>
+            <div class="answer">Cevap:
+                <div class="answer-content">
+<pre class="ans-code">&lt;?php
+for($i=1; $i<=10; $i++) {
+    if($i==5){
+        break;
+    }
+    echo $i."&lt;br&gt;";
+}
+?&gt;</pre>
+                Çıktı: 1, 2, 3, 4
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Bölüm - Test Soruları</h2>
+
+        <div class="qa-block">
+            <div class="question">14. Bir dizinin eleman sayısını bulmak için hangi fonksiyon kullanılır?<br>
+            A) max() B) count() C) min() D) print_r()</div>
+            <div class="answer">Cevap:
+                <div class="answer-content">B) count()</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">15. Aşağıdakilerden hangisi döngünün yalnızca o anki adımını atlar?<br>
+            A) break B) return C) continue D) echo</div>
+            <div class="answer">Cevap:
+                <div class="answer-content">C) continue</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">16. Formdaki bilgileri URL adresinde göstermeden göndermek için hangi metot kullanılır?<br>
+            A) GET B) POST C) LOCATION D) REFRESH</div>
+            <div class="answer">Cevap:
+                <div class="answer-content">B) POST</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">17. Aşağıdaki form elemanlarından hangisi açılır liste oluşturur?<br>
+            A) textarea B) input C) select D) submit</div>
+            <div class="answer">Cevap:
+                <div class="answer-content">C) select</div>
+            </div>
+        </div>
+
+        <h2>4. Bölüm - Klasik Sorular</h2>
+
+        <div class="qa-block">
+            <div class="question">18. GET ve POST metotlarını karşılaştırınız. Aralarındaki iki farkı yazınız.</div>
+            <div class="answer">Cevap:
+                <div class="answer-content">
+                    <ul>
+                        <li><strong>GET:</strong> Form bilgilerini URL adresinde göstererek gönderir. PHP'de <code>$_GET</code> kullanılır.</li>
+                        <li><strong>POST:</strong> Form bilgilerini URL adresinde göstermeden gönderir. PHP'de <code>$_POST</code> kullanılır.</li>
+                        <li>Şifre gibi özel bilgilerin gönderilmesinde POST tercih edilir; ancak HTTPS de kullanılmalıdır.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">19. Aşağıdaki PHP kodunda boş bırakılan yeri uygun ifadeyle tamamlayınız.
+<pre>&lt;?php
+function selam(){
+    echo "Merhaba";
+}
+// Boşluk
+?&gt;</pre>
+            </div>
+            <div class="answer">Cevap:
+                <div class="answer-content">
+<pre class="ans-code">selam();</pre>
+                Çıktı: Merhaba
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question">20. Aşağıdaki kodu inceleyiniz ve soruları cevaplayınız.
+<pre>&lt;?php
+$maas = 40000;
+if ($maas<30000) {
+    echo $maas + $maas * 0.10;
+}
+else{
+    echo $maas + $maas * 0.05;
+}
+?&gt;</pre>
+            a) Ekran çıktısı kaçtır?<br>
+            b) Hangi koşul sağlanmıştır?<br>
+            c) Maaşa yüzde kaç zam uygulanmıştır?
+            </div>
+            <div class="answer">Cevap:
+                <div class="answer-content">
+                    <strong>a)</strong> Ekran çıktısı: 42000<br>
+                    <strong>b)</strong> <code>if($maas<30000)</code> koşulu sağlanmamıştır; else bloğu çalışmıştır.<br>
+                    <strong>c)</strong> Maaşa %5 zam uygulanmıştır.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
